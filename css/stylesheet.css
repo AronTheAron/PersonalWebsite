@@ -8,7 +8,7 @@ body {
   h1 {
     color: rgb(0, 14, 117);
   }
-  #indexh1{
+  .indexh1{
     font-family: 'Monsterrat', sans-serif;
     src: url(https://fonts.google.com/specimen/Montserrat)
   }

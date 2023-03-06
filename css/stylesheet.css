@@ -24,3 +24,33 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
+.course  {
+  display: grid;
+  grid-template-areas:
+     'header header'
+     'left left'
+     'main main';
+  gap: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid; 
+}
+@media only screen and (min-width: 600px) {
+  .course {
+      display: grid;
+      grid-template-areas:
+           'header header header header header header'
+           'left main main main main main'
+           'left main main main main main';
+      gap: 10px;
+      margin-top: 10px;
+  }
+}
+.course-1 {
+  grid-area: header;
+}
+.course-2 {
+  grid-area: left;
+}
+.course-3 {
+  grid-area: main;
+}
